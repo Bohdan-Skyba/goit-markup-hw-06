@@ -354,6 +354,9 @@ img {
   display: flex;
   justify-content: space-between;
 }
+.services-list-item {
+  position: relative;
+}
 
 .servse-title-text,
 .team-title-text,
@@ -408,15 +411,7 @@ img {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
-/* .team-title-text {
-  color: var(--feature-title-text-color);
-  font-family: Roboto, sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.172;
-  letter-spacing: 0.03em;
-} */
+
 /* team social */
 
 .team-social {
@@ -434,12 +429,12 @@ img {
   height: 44px;
   border-radius: 50%;
   color: var(--icon-color);
+  transition: color 250ms var(--timing-function);
 }
 .team-social-link:hover,
 .team-social-link:focus {
   background-color: var(--logo1-active-link-text-color);
   color: var(--background-base-nav-button-text);
-  transition: color 250ms var(--timing-function);
 }
 .team-icon {
   fill: currentColor;
@@ -500,14 +495,13 @@ img {
   height: 90px;
   border: 1px solid var(--icon-color);
   border-radius: 4px;
-
   color: var(--icon-color);
+  transition: color 250ms var(--timing-function);
 }
 .clients-link:hover,
 .clients-link:focus {
   color: var(--logo1-active-link-text-color);
   border-color: var(--logo1-active-link-text-color);
-  transition: color 250ms var(--timing-function);
 }
 .clients-icon {
   width: 45;
@@ -862,127 +856,5 @@ img {
   cursor: pointer;
 
   background-color: var(--background-base-nav-button-text);
-}
-.modal-close-btn:hover,
-.modal-close-btn:focus {
-  color: var(--logo1-active-link-text-color);
-}
-
-.modal-action {
-  display: block;
-  margin-bottom: 12px;
-
-  font-size: 20px;
-  line-height: 1.15;
-  letter-spacing: 0.03em;
-
-  color: var(--feature-title-text-color);
-}
-.form-field {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 10px;
-}
-.form-field.textarea {
-  margin-bottom: 20px;
-}
-.form-field label {
-  margin-bottom: 4px;
-
-  font-size: 12px;
-  line-height: 1.16;
-
-  letter-spacing: 0.01em;
-
-  color: var(--feature-title-text-color);
-}
-.form-input,
-.form-textarea {
-  padding-top: 11px;
-  padding-bottom: 11px;
-  padding-left: 42px;
-  outline: none;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
-
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.01em;
-
-  color: var(--hero-text-color);
-
-  transition: border-color 250ms var(--timing-function);
-}
-.form-input:focus,
-.form-textarea:focus {
-  border-color: var(--logo1-active-link-text-color);
-}
-.form-input:hover + .input-icon,
-.form-input:focus + .input-icon {
-  color: var(--logo1-active-link-text-color);
-}
-.form-field .form-textarea {
-  min-height: 120px;
-  padding-top: 12px;
-  padding-right: 16px;
-  padding-bottom: 12px;
-  padding-left: 16px;
-}
-.form-field textarea::placeholder {
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.01em;
-
-  color: rgba(117, 117, 117, 0.5);
-}
-
-.input-icon {
-  position: absolute;
-  left: 12px;
-  bottom: 11px;
-  fill: currentColor;
-
-  transition: color 250ms var(--timing-function);
-}
-.form-checkbox {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 30px;
-}
-.form-checkbox label {
-  display: flex;
-  align-items: center;
-}
-.check-icon {
-  color: var(--hero-text-color);
-  margin-right: 8px;
-  border: 2px solid var(--feature-title-text-color);
-  border-radius: 2px;
-  fill: currentColor;
-
-  transition: background-color 250ms var(--timing-function),
-    border-color 250ms var(--timing-function);
-}
-.form-checkbox input {
-  position: absolute;
-  margin-right: 8px;
-}
-.form-checkbox input:checked + .check-icon {
-  border: none;
-  background-color: var(--logo1-active-link-text-color);
-}
-.form-checkbox label {
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-
-  color: var(--feature-tel-text-color);
-}
-.agreement-link {
-  text-decoration: underline;
-  text-decoration-skip-ink: none;
-  color: var(--logo1-active-link-text-color);
 }
 /*  */
